@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Sheety Controller-->
+        <scene sceneID="4H4-lJ-gSG">
+            <objects>
+                <viewController storyboardIdentifier="SheetyController" id="016-hI-FLT" customClass="SheetyController" customModule="Sheety" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Q9K-KA-nyS"/>
+                        <viewControllerLayoutGuide type="bottom" id="ioo-hZ-BhB"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="jDg-09-R6t">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="79L-K8-sMW">
+                                <rect key="frame" x="12" y="32" width="351" height="623"/>
+                                <subviews>
+                                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LCN-F9-UI2">
+                                        <rect key="frame" x="0.0" y="0.0" width="351" height="555"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aEO-9m-ydj">
+                                        <rect key="frame" x="0.0" y="567" width="351" height="56"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="56" id="cL9-SX-ePV"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                        <state key="normal" title="بازگشت"/>
+                                        <connections>
+                                            <action selector="action_Dismiss:" destination="016-hI-FLT" eventType="touchUpInside" id="PlX-6c-X8T"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="400" id="heI-Xe-1pk"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="AEL-OG-zuZ" firstAttribute="trailing" secondItem="79L-K8-sMW" secondAttribute="trailing" priority="999" constant="12" id="Dhb-4Y-th6"/>
+                            <constraint firstItem="79L-K8-sMW" firstAttribute="centerX" secondItem="jDg-09-R6t" secondAttribute="centerX" id="HIz-nQ-H1i"/>
+                            <constraint firstItem="ioo-hZ-BhB" firstAttribute="top" secondItem="79L-K8-sMW" secondAttribute="bottom" constant="12" id="RIo-1L-FL4"/>
+                            <constraint firstItem="79L-K8-sMW" firstAttribute="leading" secondItem="AEL-OG-zuZ" secondAttribute="leading" priority="999" constant="12" id="Zdo-vl-1kU"/>
+                            <constraint firstItem="79L-K8-sMW" firstAttribute="top" secondItem="AEL-OG-zuZ" secondAttribute="top" constant="12" id="kLK-AN-Z72"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="AEL-OG-zuZ"/>
+                    </view>
+                    <connections>
+                        <outlet property="button_Dismiss" destination="aEO-9m-ydj" id="RFK-Pu-86E"/>
+                        <outlet property="view_ContentHolder" destination="LCN-F9-UI2" id="asT-Ma-rvH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fok-V5-LDX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4351" y="7715"/>
+        </scene>
+    </scenes>
+</document>
