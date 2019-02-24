@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1A61B2D022217F47000E8881 /* SheetyActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A61B2CF22217F47000E8881 /* SheetyActionButton.swift */; };
+		1A61B2D2222195F8000E8881 /* SheetyActionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A61B2D1222195F8000E8881 /* SheetyActionController.swift */; };
+		1A61B2D422219727000E8881 /* SheetyAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A61B2D322219727000E8881 /* SheetyAction.swift */; };
 		1A9D719F2220726600EEEA68 /* Sheety.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A9D719D2220726600EEEA68 /* Sheety.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1A9D71AD222072A500EEEA68 /* SheetyDismissingAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A9D71A6222072A400EEEA68 /* SheetyDismissingAnimationController.swift */; };
 		1A9D71AE222072A500EEEA68 /* SheetyConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A9D71A7222072A400EEEA68 /* SheetyConfig.swift */; };
@@ -19,6 +22,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1A61B2CF22217F47000E8881 /* SheetyActionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetyActionButton.swift; sourceTree = "<group>"; };
+		1A61B2D1222195F8000E8881 /* SheetyActionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetyActionController.swift; sourceTree = "<group>"; };
+		1A61B2D322219727000E8881 /* SheetyAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetyAction.swift; sourceTree = "<group>"; };
 		1A9D719A2220726600EEEA68 /* Sheety.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Sheety.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A9D719D2220726600EEEA68 /* Sheety.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Sheety.h; sourceTree = "<group>"; };
 		1A9D719E2220726600EEEA68 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -80,6 +86,9 @@
 				1A9D71A9222072A400EEEA68 /* SheetyTransitioningDelegate.swift */,
 				1A9D71AB222072A400EEEA68 /* SheetyPresentationController.swift */,
 				1A9D71AA222072A400EEEA68 /* SheetyViewControllerExtensions.swift */,
+				1A61B2CF22217F47000E8881 /* SheetyActionButton.swift */,
+				1A61B2D1222195F8000E8881 /* SheetyActionController.swift */,
+				1A61B2D322219727000E8881 /* SheetyAction.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -176,8 +185,11 @@
 				1A9D71B3222072A500EEEA68 /* SheetyPresentingAnimationController.swift in Sources */,
 				1A9D71B0222072A500EEEA68 /* SheetyTransitioningDelegate.swift in Sources */,
 				1A9D71B2222072A500EEEA68 /* SheetyPresentationController.swift in Sources */,
+				1A61B2D422219727000E8881 /* SheetyAction.swift in Sources */,
 				1A9D71AE222072A500EEEA68 /* SheetyConfig.swift in Sources */,
+				1A61B2D2222195F8000E8881 /* SheetyActionController.swift in Sources */,
 				1A9D71B1222072A500EEEA68 /* SheetyViewControllerExtensions.swift in Sources */,
+				1A61B2D022217F47000E8881 /* SheetyActionButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

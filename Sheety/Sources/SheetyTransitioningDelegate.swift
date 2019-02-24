@@ -7,8 +7,15 @@ public final class SheetyTransitioningDelegate: NSObject, UIViewControllerTransi
 	
 	public init(basedOnConfig config: SheetyConfig) {
 		self.customHeight = config.contentControllerHeight
-		if let height = self.customHeight, config.hasDismissButton {
-			self.customHeight = height + CGFloat(80.0)
+		if var height = self.customHeight, config.hasDismissButton {
+			let extraForDismissButton: CGFloat = 80.0
+			height += extraForDismissButton
+			if	#available(iOS 11.0, *),
+				let bottomPadding = UIApplication.shared.keyWindow?.safeAreaInsets.bottom,
+				bottomPadding > 24 {
+				height += bottomPadding
+			}
+			self.customHeight = height + 10
 		}
 	}
 	

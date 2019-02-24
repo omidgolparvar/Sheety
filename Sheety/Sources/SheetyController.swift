@@ -22,6 +22,10 @@ final class SheetyController: UIViewController {
 		setupViews()
     }
 	
+	override func viewDidAppear(_ animated: Bool) {
+		super.viewDidAppear(animated)
+		
+	}
 	@IBAction func action_Dismiss(_ sender: UIButton) {
 		dismiss(animated: true, completion: nil)
 	}

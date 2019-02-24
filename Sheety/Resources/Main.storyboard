@@ -51,7 +51,7 @@
                         <constraints>
                             <constraint firstItem="AEL-OG-zuZ" firstAttribute="trailing" secondItem="79L-K8-sMW" secondAttribute="trailing" priority="999" constant="12" id="Dhb-4Y-th6"/>
                             <constraint firstItem="79L-K8-sMW" firstAttribute="centerX" secondItem="jDg-09-R6t" secondAttribute="centerX" id="HIz-nQ-H1i"/>
-                            <constraint firstItem="ioo-hZ-BhB" firstAttribute="top" secondItem="79L-K8-sMW" secondAttribute="bottom" constant="12" id="RIo-1L-FL4"/>
+                            <constraint firstItem="AEL-OG-zuZ" firstAttribute="bottom" secondItem="79L-K8-sMW" secondAttribute="bottom" constant="12" id="RIo-1L-FL4"/>
                             <constraint firstItem="79L-K8-sMW" firstAttribute="leading" secondItem="AEL-OG-zuZ" secondAttribute="leading" priority="999" constant="12" id="Zdo-vl-1kU"/>
                             <constraint firstItem="79L-K8-sMW" firstAttribute="top" secondItem="AEL-OG-zuZ" secondAttribute="top" constant="12" id="kLK-AN-Z72"/>
                         </constraints>
